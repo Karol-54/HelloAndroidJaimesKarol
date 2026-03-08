@@ -1,9 +1,9 @@
 # Taller 1 - Hello Android
 
 ## Información del Estudiante
-- Nombre: Karol Jaimes
-- Código: [Tu código estudiantil]
-- Fecha: 8/03/2026
+- Nombre: Karol Liliana Jaimes Orduz
+- Código: E193
+- Fecha: 06/03/2026
 
 ## Respuestas
 
@@ -25,3 +25,22 @@ Android administra la memoria y los procesos del dispositivo. Cuando hay pocos r
 ## Capturas de Pantalla
 
 ![Captura del emulador](captura_emulador.png)
+
+## Taller 2 - Arquitectura MVVM
+
+### Respuestas a Preguntas Conceptuales
+
+#### 1. ¿Qué problema resuelve el ViewModel en Android?
+Permite mantener y gestionar los datos de la interfaz incluso cuando ocurren cambios de configuración como la rotación de pantalla.
+
+#### 2. ¿Por qué LiveData es "lifecycle-aware" y qué beneficio trae?
+Porque solo envía actualizaciones cuando el componente está activo, evitando errores y consumo innecesario de recursos.
+
+#### 3. Explica con tus propias palabras el flujo de datos en MVVM
+La Vista observa al ViewModel, el ViewModel obtiene datos del Repository y cuando cambian los datos se actualiza la Vista.
+
+#### 4. ¿Qué ventaja tiene usar Fragments vs múltiples Activities?
+Permiten reutilizar partes de la interfaz y manejar mejor la navegación dentro de una misma actividad.
+
+#### 5. ¿Cómo ayuda el Repository Pattern a la arquitectura?
+Centraliza el acceso a los datos y separa la lógica de datos de la interfaz.
