@@ -44,3 +44,9 @@ Permiten reutilizar partes de la interfaz y manejar mejor la navegación dentro 
 
 #### 5. ¿Cómo ayuda el Repository Pattern a la arquitectura?
 Centraliza el acceso a los datos y separa la lógica de datos de la interfaz.
+
+
+### Capturas de Pantalla
+
+![Lista de usuarios](screenshot_list.png)
+![Detalle de usuario](screenshot_detail.png)
