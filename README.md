@@ -48,5 +48,5 @@ Centraliza el acceso a los datos y separa la lógica de datos de la interfaz.
 
 ### Capturas de Pantalla
 
-![Lista de usuarios](screenshot_list.png)
-![Detalle de usuario](screenshot_detail.png)
+![screenshot_list.png](screenshot_list.png)
+![screenshot_detail.png](screenshot_detail.png)
