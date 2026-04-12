@@ -26,5 +26,29 @@
             android:name="userId"
             app:argType="integer" />
     </fragment>
+    <fragment
+        android:id="@+id/taskListFragment"
+        android:name="com.jaimes.helloandroid.ui.TaskListFragment"
+        android:label="Mis Tareas"
+        tools:layout="@layout/fragment_task_list">
+
+        <action
+            android:id="@+id/action_taskListFragment_to_taskDetailFragment"
+            app:destination="@id/taskDetailFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/taskDetailFragment"
+        android:name="com.jaimes.helloandroid.ui.TaskDetailFragment"
+        android:label="Detalle de Tarea"
+        tools:layout="@layout/fragment_task_detail">
+
+        <argument
+            android:name="taskId"
+            app:argType="integer"
+            android:defaultValue="-1"/>
+
+    </fragment>
 
 </navigation>

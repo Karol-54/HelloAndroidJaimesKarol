@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.jaimes.helloandroid.R
 import com.jaimes.helloandroid.databinding.FragmentUserListBinding
 import com.jaimes.helloandroid.viewmodel.UserViewModel
 
@@ -39,7 +40,6 @@ class UserListFragment : Fragment() {
 
     private fun setupRecyclerView() {
         adapter = UserAdapter { user ->
-            // Click en un usuario
             viewModel.selectUser(user)
             val action = UserListFragmentDirections
                 .actionListToDetail(userId = user.id)
@@ -65,12 +65,15 @@ class UserListFragment : Fragment() {
 
     private fun setupClickListeners() {
         binding.buttonAddUser.setOnClickListener {
-            // Por ahora agregar usuario con datos fijos
             viewModel.addUser(
                 name = "Usuario Nuevo ${System.currentTimeMillis() % 100}",
                 email = "nuevo${System.currentTimeMillis() % 100}@example.com",
                 age = (20..40).random()
             )
+        }
+
+        binding.buttonGoToTasks.setOnClickListener {
+            findNavController().navigate(R.id.taskListFragment)
         }
     }
 

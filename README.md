@@ -48,3 +48,18 @@ Centraliza el acceso a los datos y separa la lógica de datos de la interfaz.
 
 ![screenshot_list.png](screenshot_list.png)
 ![screenshot_detail.png](screenshot_detail.png)
+
+Taller 3 - Lista de Tareas con Fragments, Persistencia y Recordatorios
+
+Qué se implementó
+- Lista de tareas con RecyclerView para agregar y editar tareas
+- Persistencia local con SharedPreferences y Gson
+- BroadcastReceiver con AlarmManager para recordatorios
+- Navegación entre Fragments con Navigation Component
+
+Opción de recordatorio utilizada
+Se utilizó la Opción A: Notificación local. Al guardar una tarea con recordatorio activado, se muestra una notificación en la barra de estado después de 30 segundos.
+
+![Lista de tareas.png](Docs/Lista%20de%20tareas.png)
+![Detalle de Tareas.png](Docs/Detalle%20de%20Tareas.png)
+![Notificacion de tareas.png](Docs/Notificacion%20de%20tareas.png)
